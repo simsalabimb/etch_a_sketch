@@ -1,37 +1,5 @@
-You’re going to build a browser version of something between a sketchpad and an Etch-A-Sketch.
+This is a Javascript project from The Odin Project. The instructions are:
 
-
-https://jackisadog97.github.io/sketch_board/
-
-Figure out how to get border around container so it's inside of a box
-
-Get grid to only print inside of the box
-
-
-
-
-grid-template-columns: repeat(var(--grid-cols), 1fr); grid-template-rows: repeat(autofit, minmax(950px, 1fr));
-
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr); 
-
-
-
-
-https://jackisadog97.github.io/sketch_board/ : uses nested divs to create box but not sure how to keep grid contained inside box
-
-    .house {
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 0px;
-      width: 700px;
-  }
-  
-
-    .grid_container {
-      display: grid;
-      background: black;
-      width: 700px;
-      height: 700px;
-      border: 4px groove lightcoral;
-  }
+1. Create a web page with a 16x16 grid of square divs.
+2. Set up a hover effect so it changes the color of the square when your mouse passes over it, leaving a trail through your grid like a pen would.
+3. Add a button to the top of the screen which will clear the current grid and send the user a popup asking for how many squares per side to make the new grid. Once entered, the new grid should be generated in the same total space as before (e.g. 960px wide) and now you've got a new sketch pad.

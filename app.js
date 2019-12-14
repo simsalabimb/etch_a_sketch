@@ -4,14 +4,12 @@ let active = document.getElementsByClassName('used');
 let reset = document.getElementById("reset");
 
 
-
 //CREATES THE INITIAL GRID TO BE USED
 function makeRows(size) {
   container.style.setProperty('--grid-rows', size);
   container.style.setProperty('--grid-cols', size);
   for (c = 0; c < (size * size); c++) {
     let cell = document.createElement("div");
-   cell.innerText = (c + 1); //USE THIS TO SEE NUMBERS INSIDE BOX TO SEE IF NEW GRID IS CREATED OR APPENDED TO PREVIOUS GRID
   container.appendChild(cell).className = "grid-item";
   };
 };
@@ -35,6 +33,7 @@ function removeClass(){
 
 //function to reset the grid with new dimensions
 function newGrid(){
+  container.innerHTML = "";
   while (active[0]){
     active[0].classList.remove('used');
   }
@@ -47,10 +46,3 @@ makeRows(16); //starts initial 16 x 16 grid
 clear.addEventListener('click', removeClass);
 reset.addEventListener('click', newGrid);
 addEventListener('mouseover', effect, false);
-
-
-/*
----------------------
-
-----------------------
-*/
