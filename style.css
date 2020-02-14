@@ -4,8 +4,9 @@
   }
 
   body {
-    background-color: rgb(209, 240, 184);
+    background-color: #00001a;
   }
+  
 
   #container {
     display: grid;
@@ -19,6 +20,7 @@
     }
 
     h1 {
+    color: white;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
@@ -32,11 +34,11 @@
   }
 
   .used {
-    background-color: blue;
+    background-color: #1a1aff;
   }
 
   #clear, #reset {
-    background-color: #4CAF50;
+    background-color: #b3b3ff;
     border: none;
     color: white;
     padding: 15px 32px;
